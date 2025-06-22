@@ -3,7 +3,13 @@ class LinkedList {
     list = []
 
     append(value){
+
         const node = new Node(value, null)
+
+        if(this.list.length > 0){
+            this.list.at(-1).nextNode = node
+        }
+
         this.list.push(node)
     }
 
@@ -31,7 +37,8 @@ class Node {
 
 const list = new LinkedList()
 list.append(2)
-list.prepend(1)
+list.append(3)
+list.append(4)
 
 console.log(list.list)
 
