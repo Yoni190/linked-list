@@ -23,6 +23,10 @@ class LinkedList {
         const node = new Node(value, pointer)
         this.list.unshift(node)
     }
+
+    size(){
+        return this.list.length;
+    }
 }
 
 class Node {
@@ -36,9 +40,11 @@ class Node {
 }
 
 const list = new LinkedList()
-list.append(2)
+list.prepend(2)
 list.append(3)
-list.append(4)
+list.prepend(4)
+list.append(5)
+console.log(list.size())
 
 console.log(list.list)
 
