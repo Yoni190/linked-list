@@ -39,6 +39,10 @@ class LinkedList {
     at(index){
         return this.list[index]
     }
+
+    pop(){
+        this.list.pop();
+    }
 }
 
 class Node {
