@@ -61,6 +61,16 @@ class LinkedList {
         }
         return null
     }
+
+    toString(){
+        let string = "";
+        for(const node of this.list){
+            string += `( ${node.value} ) -> `
+        }
+
+        string += " null"
+        return string
+    }
 }
 
 class Node {
@@ -79,7 +89,7 @@ list.append(3)
 list.append(4)
 list.append(5)
 
-console.log(list.find(4))
+console.log(list.toString())
 
 
 
