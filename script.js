@@ -43,6 +43,15 @@ class LinkedList {
     pop(){
         this.list.pop();
     }
+
+    contains(value){
+        for(const node of this.list) {
+            if(node.value == value){
+                return true
+            }
+        }
+        return false
+    }
 }
 
 class Node {
@@ -61,7 +70,7 @@ list.append(3)
 list.prepend(4)
 list.append(5)
 
-console.log(list.at(2))
+console.log(list.contains(5))
 
 
 
