@@ -1,4 +1,4 @@
-class LinkedList {
+export class LinkedList {
 
     list = []
 
@@ -73,7 +73,7 @@ class LinkedList {
     }
 }
 
-class Node {
+export class Node {
     value = null
     nextNode = null
 
@@ -82,14 +82,6 @@ class Node {
         this.nextNode = nextNode
     }
 }
-
-const list = new LinkedList()
-list.append(2)
-list.append(3)
-list.append(4)
-list.append(5)
-
-console.log(list.toString())
 
 
 
