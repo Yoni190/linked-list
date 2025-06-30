@@ -25,7 +25,19 @@ class LinkedList {
     }
 
     size(){
-        return this.list.length;
+        return this.list.length
+    }
+
+    head(){
+        return this.list[0]
+    }
+
+    tail(){
+        return this.list.at(-1);
+    }
+
+    at(index){
+        return this.list[index]
     }
 }
 
@@ -44,9 +56,8 @@ list.prepend(2)
 list.append(3)
 list.prepend(4)
 list.append(5)
-console.log(list.size())
 
-console.log(list.list)
+console.log(list.at(2))
 
 
 
