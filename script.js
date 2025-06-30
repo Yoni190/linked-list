@@ -46,11 +46,20 @@ class LinkedList {
 
     contains(value){
         for(const node of this.list) {
-            if(node.value == value){
+            if(node.value === value){
                 return true
             }
         }
         return false
+    }
+
+    find(value){
+        for(const node of this.list){
+            if(node.value === value){
+                return this.list.indexOf(node)
+            }
+        }
+        return null
     }
 }
 
@@ -65,12 +74,12 @@ class Node {
 }
 
 const list = new LinkedList()
-list.prepend(2)
+list.append(2)
 list.append(3)
-list.prepend(4)
+list.append(4)
 list.append(5)
 
-console.log(list.contains(5))
+console.log(list.find(4))
 
 
 
