@@ -73,7 +73,7 @@ export class LinkedList {
     }
 }
 
-export class Node {
+class Node {
     value = null
     nextNode = null
 

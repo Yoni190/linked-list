@@ -1,5 +1,4 @@
 import { LinkedList } from "./script";
-import { Node } from "./script";
 
 const list = new LinkedList();
 
